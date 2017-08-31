@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body {
+    margin: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    /*   flex-wrap: wrap; */
+    padding: 0 10px 0;
+    background: #373939;
+    /*   justify-content: space-between; */
+    justify-content: space-around;
+    font-family: sans-serif;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .main-title {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-right: auto;
+  }
+  
+  .links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    /*   display: inline; */
+    display: inline-block;
+  }
+  
+  
+  /* Make all hyperlinks in navbar look nice */
+  
+  .links a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+  }
+  
+  .links a:hover {
+    background: #F6782D;
+  }
+  
+  /* End of navbar stuff */
+  body {
+    font-family: sans-serif;
+  }
+
+#main-content {
+	background: white;
+	width: 95%;
+	max-width: 1024px;
+	margin: 0.9em auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding-top: 5px; /* Relleno superior igual a la altura de la cabecera */
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;    
+}
+
+h1 { 
+  display: block;
+  font-size: 1.5em; 
+  font-weight: bold;
+  margin: 0.8em 0.4em 0.4em 0.4em; /* margin:top right bottom left; */
+  background-color: black;
+  color: white;
+  padding: 0.23em;
+  border-radius: 0.23em;    
+}
+
+.infoTexto{
+    font-family: 'Lora', serif;; 
+    font-size: 1em;
+    padding: 0.5em 5em;
+ }
+
+ .infoTexto h2, h3, h4 {
+    font-family: 'Lora', serif;; 
+    font-size: 1.1em;
+    font-weight: bold; 
+    /* padding: 0 0.75em ;
+    margin: 0.75em; */
+ }
+
+hr {
+  width: 80%;
+  align-content: center;
+  border: 1px solid gainsboro;
+}
+
+.infoHabilidades{
+  display: flex;
+  align-items: center;
+}
+.infoHabilidades-item1{
+  width: 30%;
+  text-align: right;
+}
+.infoHabilidades-item2{
+  width: 70%;
+}
+
+
+.infoExperiencia{
+  display: flex;
+  align-items: center;
+}
+.infoExperiencia-item1{
+  width: 20%;
+  text-align: left;
+}
+.infoExperiencia-item2{
+  width: 50%;
+  text-align: left;
+}
+.infoExperiencia-item3{
+  width: 30%;
+  text-align: left;
+}
+
+
+footer{
+  height: 2em;
+  font-size:0.9em; 
+  color:#000000;
+  text-align: right;
+  padding: 0.9em;
+  background-color: whitesmoke;  
+}
