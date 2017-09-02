@@ -1,0 +1,113 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em; /* tamaño por defecto de una fuente normal */
+    line-height: 1.6em; /* es el interlineado */
+   }
+    
+   /* el simbolo > es para que tome el estilo de los seccion principales "NO DE TODO" */
+   body > section {
+    clear: both;
+    padding: 50px 0;
+   }
+    
+   h1, h2 {
+    font-family: 'Roboto', sans-serif;
+   }
+
+   h1 {
+    color: #0c243d;
+    text-transform: uppercase;
+    font-weight: 700px;
+    font-size: 2.4em;
+   }
+
+   h2{
+       color: #0c243d;
+       text-transform: uppercase;
+       font-weight: 400px;
+       font-size: 1.4em;
+   }
+
+   .separador {
+       width: 40px;
+       height: 4px;
+       display: block; /* es para que ocupe todo el ancho del bloque */
+       margin: 0 auto;
+       background-color: #0c243d;
+       margin-bottom: 30px;
+   }
+
+   .grisBG {
+    background-color: #f5f5f5;
+   }
+
+   /** #PRINCIPAL **/
+
+   section#principal {
+    min-height: 700px;
+    padding-top: 100px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e3d5a+0,0c223b+100 */
+    background: #1e3d5a; /* Old browsers */
+    background: -moz-linear-gradient(top, #1e3d5a 0%, #0c223b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1e3d5a 0%,#0c223b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1e3d5a 0%,#0c223b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3d5a', endColorstr='#0c223b',GradientType=0 ); /* IE6-9 */
+   }
+
+
+   /** #APP **/
+
+   section#app .social {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* para que quede un circulo perfecto */
+    background-color: #123156;
+    margin: auto; /* para que esten alineados */
+    line-height: 180px; /* aca es para que esten los iconos de awesome */
+   }
+
+
+    /** #CARACTERISTICAS **/
+
+    section#caracteristicas p {
+        font-style: .9em;
+        color: #858585;
+    }
+
+    section#caracteristicas .caracteristica {
+        margin-bottom: 20px;
+        clear: both;
+    }
+
+    section#caracteristicas .icono {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: #123156;
+        margin: 0 auto;
+        line-height: 140px;
+        text-align: center;
+    }
+
+    /** #PANTALLAS **/
+
+    div.modal-body {
+        text-align: center;
+    }
+
+    div.modal-body img {
+        max-height: 90%;
+    }
+
+
+
+
+
+
+
+
