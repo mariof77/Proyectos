@@ -61,6 +61,22 @@
         background-color: #123156;
    }
 
+   /** #ANIMACIONES **/
+   .anima1, .anima2, .anima3, img#appImagen, img#appCentral {
+       opacity: 0;
+   }
+
+   .anima2{
+        animation-delay: .3s;
+        -webkit-animation-delay: .3s;        
+   }
+
+   .anima3{
+        animation-delay: .6s;
+        -webkit-animation-delay: .6s;        
+    }
+
+
    /** #MENU **/
    
    .navbar-default {

@@ -9,6 +9,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrapValidator.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/animate.css">
         <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
@@ -307,7 +308,7 @@
         <div class="container-fluid" style="padding:0; position:relative;">
           <div class="contenidoDescarga">
             <div class="phone">
-                <img src="img/descargarApp.png" class="img-responsive">
+                <img src="img/descargarApp.png" class="img-responsive anima1">
             </div>
             <div class="derechaVacio">
 
@@ -347,17 +348,17 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
 
-              <form class="form-horizontal">
+              <form class="form-horizontal" id="soporteForm" method="post" action="ajaxSubmit.php">
                 <div class="form-group">
                   <div class="col-sm-12"> <!-- col-sm-12. es para que se extienda en toda la pantalla -->
-                    <input type="text" class="form-control campos" placeholder="Nombre">
+                    <input type="text" class="form-control campos" placeholder="Nombre" name="nombre" required>
                   </div>
                 </div>
 
                 <div>
                   <div class="form-group">
                     <div class="col-sm-12">
-                      <input type="email" class="form-control campos" placeholder="Email">
+                      <input type="email" class="form-control campos" placeholder="Email" name="email" required>
                     </div>
                   </div>
                 </div>
@@ -365,7 +366,7 @@
                 <div>
                   <div class="form-group">
                     <div class="col-sm-12">
-                      <textarea class="form-control campos" placeholder="Mensaje"></textarea>
+                      <textarea class="form-control campos" placeholder="Mensaje" name="mensaje" required></textarea>
                     </div>
                   </div>
                 </div>
@@ -377,6 +378,10 @@
                     </div>
                   </div>
                 </div>
+                <div id="correcto">
+                    El mensaje se envio correctamente!
+                </div>
+
               </form>
 
             </div> <!-- ./col-md-8 -->
@@ -389,6 +394,7 @@
         
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
       <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/vendor/bootstrapValidator.js"></script>
       <script src="js/smooth-scroll.js"></script>
       <script src="js/jquery.waypoints.js"></script>
       <script src="js/waypoints.js"></script>
